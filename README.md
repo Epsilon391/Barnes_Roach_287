@@ -10,3 +10,5 @@ The Arduino_SPI file contains the code for reading the encoded input from the FP
 
 The zipped file contains all quartus files that the project generated.
 In order to operate the PS2 keyboard you must press enter after you input each digit. When it comes to funtional keys, the negative sign, 0-9, enter signals must be sent using the alphanumeric portion of the keyboard. The negative signal can be sent to the Arduino, but it currently has no functionallity since the servo goes from 0 to 180.
+
+When reading keyboard inputs, the Next State portion of the FSM is designed to only accept values from 199 to -199. For example entering 4, enter, 3, enter would yield 043, not 43x. As such, if you wanted to go from 999 to -999 you would expand to_arduino by three bits, Arduino_SPI would be looking for 13 bits in addtion to the 4 1s, and the for loop would need its condition updated.
