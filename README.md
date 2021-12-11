@@ -4,6 +4,7 @@ IMPORTANT: In order for the FPGA to read keyboard inputs, the read, chipselect, 
 
 The goal of this project is to use a PS2 keyboard to control a servo wired to an Arduino. 
 This is done by using an FPGA to read the PS2 input. Then, the FPGA encodes it and sends it to the Arduino.
+
 The 287 Project proposal file contains a gantt chart and a list of some of our goals for the project.
 
 The Arduino_SPI file contains the code for reading the encoded input from the FPGA and translating it to values for the servo.
