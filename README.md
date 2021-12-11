@@ -7,6 +7,8 @@ This is done by using an FPGA to read the PS2 input. Then, the FPGA encodes it a
 
 The 287 Project proposal file contains a gantt chart and a list of some of our goals for the project.
 
+There are also some photos of the wiring between the FPGA and Arduino.
+
 The Arduino_SPI file contains the code for reading the encoded input from the FPGA and translating it to values for the servo.
 
 The zipped file contains all quartus files that the project generated.
